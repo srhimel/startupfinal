@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container text-center">
+
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="League of Startups">
+
+                <h5>Tournament For Startups</h5></a>
+            <section class="section-cta my-container">
+                <div class="row">
+                    <div class="col-md-8"><br>
+                        <div class="subscribe">
+
+
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="Your Email Address">
+                                <div class="p-1"></div>
+                                <button type="submit" class="btn btn-dark rounded-0 form-control">Round by Round Updates
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4  align-self-center">
+                        <div class="starttup-submit">
+                            <a  href="/register-startup.html" class="btn btn-dark w-100 mt-3"> Submit Startup</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-info">
+                        <span class="icon text-primary"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-90deg-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2.646 9.646a.5.5 0 0 1 .708 0L6 12.293l2.646-2.647a.5.5 0 1 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M6 13a.5.5 0 0 1-.5-.5V6A2.5 2.5 0 0 1 8 3.5h5.5a.5.5 0 0 1 0 1H8A1.5 1.5 0 0 0 6.5 6v6.5a.5.5 0 0 1-.5.5z"/>
+                          </svg></span>
+                        Submit your Startup
+                        for the next Tournament</div>
+                    <div class="register-form">
+                        <form class="row g-3">
+                            <div class="col-md-12">
+                                <label for="name" class="form-label">Startup Name</label><span class="required"> -
+                                    Required</span>
+                                <div class="input-counter">
+                                    <input maxlength="30" onkeyup="countChar(this)" type="text" class="form-control"
+                                        id="name" required placeholder="Name of your Startup">
+                                    <div class="input-counter__text"><small><span id="charNum">0</span>/30</small></div>
+                                </div>
+                                <!-- Error Feedback -->
+                                <div class="invalid-feedback">
+
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="elevetor" class="form-label">Elevator Pitch</label><span class="required"> -
+                                    Required</span>
+                                <div class="input-counter">
+                                    <textarea maxlength="80" rows="4" onkeyup="countCharT(this)" class="form-control"
+                                        id="elevetor" required
+                                        placeholder="Short description of your startup idea, company or concept"></textarea>
+                                    <div class="input-counter__text"><small><span id="charNumT">0</span>/80</small>
+                                    </div>
+                                </div>
+                                <!-- Error Feedback -->
+                                <div class="invalid-feedback">
+
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="weburl" class="form-label">Website Link</label> <span class="required"> -
+                                    Required</span>
+                                <input type="text" class="form-control" id="weburl" placeholder="http://yourwebsite.com"
+                                    required>
+                                <!-- <div class="invalid-feedback d-block">
+                                    Your website link is invalid
+                                </div> -->
+                            </div>
+                            <div class="col-md-12">
+                                <label for="image" class="form-label">Thumbnail</label> <span class="required"> -
+                                    Required</span>
+                                <div class="image-upload">
+
+                                    <div class="image-box">
+                                        <div class="row g-0">
+                                            <div class="col-2 image">
+                                                <svg width="50" height="38" viewBox="0 0 50 38"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon_e4eef clickable_1ca0f">
+                                                    <g fill="none" fill-rule="evenodd">
+                                                        <path
+                                                            d="M33.25 4.75H1.583C.71 4.75 0 5.459 0 6.333v25.334c0 .874.709 1.583 1.583 1.583H33.25c.874 0 1.583-.709 1.583-1.583V6.333c0-.874-.709-1.583-1.583-1.583z"
+                                                            fill="#D4D4D4"></path>
+                                                        <g transform="rotate(7 -35.51 56.656)">
+                                                            <path
+                                                                d="M33.25 0H1.583C.71 0 0 .709 0 1.583v25.334C0 27.79.709 28.5 1.583 28.5H33.25c.874 0 1.583-.709 1.583-1.583V1.583C34.833.71 34.124 0 33.25 0z"
+                                                                fill="#E6E6E6"></path>
+                                                            <path
+                                                                d="M31.667 26.125h-28.5a.792.792 0 0 1-.792-.792V3.167c0-.438.354-.792.792-.792h28.5c.437 0 .791.354.791.792v22.166a.792.792 0 0 1-.791.792z"
+                                                                fill="#FFF"></path>
+                                                            <circle fill="#E6E6E6" cx="15.042" cy="8.708" r="2.375">
+                                                            </circle>
+                                                            <path
+                                                                d="M19.334 22.167l-6.9-6.893a.792.792 0 0 0-1.16.044l-4.75 5.54a.792.792 0 0 0 .601 1.309h12.21z"
+                                                                fill="#C9C6C6"></path>
+                                                            <path
+                                                                d="M28.349 20.91l-6.334-8.71a.792.792 0 0 0-1.266-.02l-7.772 9.986h14.731a.792.792 0 0 0 .64-1.258z"
+                                                                fill="#E6E6E6"></path>
+                                                        </g>
+                                                        <path
+                                                            d="M41.958 0a7.917 7.917 0 1 0 7.917 7.917A7.94 7.94 0 0 0 41.958 0zm3.959 8.576h-3.299v3.299h-1.32V8.576H38v-1.32h3.299V3.959h1.32v3.299h3.298v1.32z"
+                                                            fill="#2A7BFF" fill-rule="nonzero"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="text-primary" id="imageName">Upload image</p>
+                                                <p class="info">Recommended size: 250x250
+                                                </p>
+                                                <p class="info">JPG, PNG, GIF. Max size: 1MB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <input name="thumbnail" type="file" class="image-file form-control" id="image"
+                                    onchange="readURL(this);"  required>
+                                    <!-- <div class="invalid-feedback d-block">
+                                        Please choose a different image.
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <h4 class="more">Tell us more about your startup</h4>
+                                <label for="weburl" class="form-label">Do you have a explainer video on Youtube?</label>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input checked class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="yesCheck" value="option1" onclick="javascript:yesnoCheck();">
+                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="noCheck" value="option2" onclick="javascript:yesnoCheck();">
+                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                </div>
+
+                            </div>
+                            <!--
+
+                                This two fields are conditional field.
+                                Only one of this field is fillable
+
+                            -->
+
+                            <!-- Youtube field if choose yes -->
+                            <div class="col-md-12" id="youtubeField">
+                                <label for="youtube" class="form-label">Youtube Video Link</label>
+                                <input type="text" class="form-control" id="youtube"
+                                    placeholder="https://www.youtube.com/watch?v=-24zBDFT45s">
+                                <!-- <div class="invalid-feedback d-block">
+                                    Not a valid youtube url
+                                </div> -->
+                            </div>
+                            <!-- Cover Image field if choose yes -->
+                            <div class="col-md-12 sr-only" id="coverField">
+                                <label for="cover" class="form-label">Upload Cover Image</label> 
+                                <div class="file-box">
+                                    <input  type="file"
+                                        name="cover" id="cover" multiple="multiple" class="inputfile inputfile-1">
+                                    <label class="cover-border" for="cover"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17"
+                                            viewBox="0 0 20 17">
+                                            <path
+                                                d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z">
+                                            </path>
+                                        </svg> <span id="fill-title">Choose a Cover Image</span></label>
+                                        <label for=""><small>Recommended Image Ratio: 16:9 </small></label>
+                                    </div>
+                                <!-- <div class="invalid-feedback d-block">
+                                    Not a valid image
+                                </div> -->
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="description" class="form-label">Why did you start this? (Your Story)</label>
+                                <div class="input-counter">
+                                    <textarea maxlength="1200" rows="4" onkeyup="countCharD(this)" class="form-control"
+                                        id="description" required
+                                        placeholder="Story about of your startup idea, company or concept"></textarea>
+                                    <div class="input-counter__text"><small><span id="charNumD">0</span>/1200</small>
+                                    </div>
+                                </div>
+                                <!-- Error Feedback -->
+                                <div class="invalid-feedback">
+
+                                </div>
+                            </div>
+
+                            <!-- Payment Field - Remove this field when there is no paid tournament enabled -->
+                            <div class="col-md-12" id="paymentField">
+                                <label for="paymeny" class="form-label">Want to join the tournament instantly?</label>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input checked class="form-check-input" type="radio" name="payment"
+                                        id="noPay" value="free" >
+                                    <label class="form-check-label" for="inlineRadio1">No (Free)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment"
+                                        id="yesPay" value="paid" >
+                                    <label class="form-check-label" for="inlineRadio2">Yes (Paid)</label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-dark float-right" type="submit">
+                                    Submit for Placement
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+
+
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-md-12 preview">
+                    <p class="text-uppercase title mt-4">Preview</p>
+                    <div class="startups">
+                        <!-- Participents ( 2 member in one tem) -->
+                        <div class="card section-round__perticipent">
+                            <!-- First Perticipent-->
+                            <div class="d-flex bd-highlight section-round__perticipent-1">
+                                <div class="section-round__perticipent-image"><a target="_blank"
+                                        href="https://www.gerlach.net/aliquam-nihil-vitae-mollitia"><img id="blah"
+                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
+                                            alt="Image"></a></div>
+                                <div class="section-round__perticipent-text">
+                                    <h4 id="startup">
+                                        Startup Name Goes Here
+
+
+                                        <!---->
+                                    </h4>
+                                    <p id="pitch">
+                                        I wonder?' As she said this, she noticed that one of the officers of the birds
+                                        hurried off to the croquet-ground. The other side of WHAT?.
+                                    </p>
+                                    <div><a href="#" class="btn btn-sm btn-light border">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                                                <path
+                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
+                                                <path
+                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
+                                                <path
+                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
+                                            </svg>
+                                            <span id="urlLink">
+                                                www.sayazin.com
+                                            </span>
+                                        </a></div>
+                                </div>
+                                <span class="section-round__perticipent-vote">
+                                    <a href="#">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
+                                        </svg> <br>0
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="pt-4 pb-3 footer">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-5 links">
+                        <h4 class="mt-2">Useful Links</h4>
+                        <span class="footer-bar"></span>
+                        <ul class="m-0 p-0">
+                            <li>- <a href="#">About Us</a></li>
+                            <li>- <a href="#">Archive</a></li>
+                            <li>- <a href="#">Grand Archive</a></li>
+                            <li>- <a href="#">Others</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-7 about-company">
+                        <h4 class="mt-2">Subscribe to our newsletter</h4>
+                        <span class="footer-bar"></span>
+                        <p class="pr-5 text-white-50">Want to get update? Sign up to receive the round by round update.
+                        </p>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Your Email Address"
+                                aria-label="Your Email Address" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col copyright">
+                        <p class=""><small class="text-white-50">© 2020. All Rights Reserved.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="custom.jquery.js"></script>
+</body>
+
+</html>
